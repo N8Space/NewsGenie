@@ -1,0 +1,24 @@
+# Environments & dependencies
+venv/
+env/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Sensitive files / keys
+.env
+*.env
+*.key
+*.pem
+
+# IDEs & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Archives
+*.zip
+*.tar.gz
