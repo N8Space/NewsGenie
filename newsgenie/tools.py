@@ -42,7 +42,7 @@ def fetch_news(category: str, query: str = "") -> str:
             source = a.get("source", {}).get("name", "Unknown Source")
             url = a.get("url", "")
             desc = a.get("description", "No description available.")
-            results.append(f"**{title}** ({source})\n{desc}\nRead more: {url}")
+            results.append(f"### {title}\n- **Source:** {source}\n- **Summary:** {desc}\n- **Link:** {url}")
             
         return "\n\n".join(results)
     except Exception as e:

@@ -11,7 +11,7 @@ An intelligent AI-powered assistant that combines conversational reasoning with 
 2. **Fetch categorized headlines** via **NewsAPI** for current news topics.
 3. **Perform live web search** via **Tavily** for recent factual verification.
 
-Built with an intuitive **Streamlit** user interface featuring session management, interactive chat history, and key configuration.
+Built with a sleek, modern **Streamlit** dark glassmorphism interface featuring dynamic API status telemetry, one-click category launchers, starter prompt cards, markdown transcript export, interactive chat history, and runtime key configuration.
 
 ---
 
@@ -84,7 +84,7 @@ Create a `.env` file from the example template:
 ```bash
 cp .env.example .env
 ```
-Fill in your API keys in `.env` (or enter them directly in the Streamlit sidebar UI):
+Fill in your API keys in `.env` (loaded securely by the application):
 ```env
 GEMINI_API_KEY=your_gemini_api_key_here
 TAVILY_API_KEY=your_tavily_api_key_here
@@ -102,11 +102,13 @@ streamlit run app.py
 
 ```
 NewsGenie/
+├── .streamlit/
+│   └── config.toml     # Modern theme configuration
 ├── newsgenie/
 │   ├── __init__.py
 │   ├── tools.py        # NewsAPI and Tavily search tool definitions
 │   └── workflow.py     # LangGraph state graph & Gemini agent compilation
-├── app.py              # Streamlit chat interface & session handling
+├── app.py              # Modern Streamlit chat interface & session handling
 ├── requirements.txt    # Project dependencies
 ├── .env.example        # Environment variable template
 ├── .gitignore          # Git ignore rules for Python, venv & keys
